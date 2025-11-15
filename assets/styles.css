@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.column{
+  height: 100%;
+  padding: 1.625rem 5rem;
+  flex: 1;
+}
+
+.column:first-of-type{
+  background-color: rgba(91, 135, 229, 0.51);
+  max-width: 35%;
+  width: 100%;
+}
+
+.column:first-of-type p:first-of-type{
+  font-size: 3.125rem;
+}
