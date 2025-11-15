@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
 }
 
 body{
@@ -9,20 +10,107 @@ body{
   flex-direction: row;
   width: 100vw;
   height: 100vh;
+  background-color: rgb(0, 86, 13)
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 86, 13);
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button{
+  background-color: rgb(0, 86, 13);
+  border: transparent;
+  color: #ffffff;
+  min-height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+input, input:active, input:focus{
+  outline: none;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+input{
+  padding: 10px;
+  border-bottom: 1px solid rgb(0, 86, 13);
+  color: rgb(0, 86, 13);
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+input::placeholder{
+  color: rgb(0, 86, 13, 0.75);
 }
 
 .column{
+  width: 100%;
   height: 100%;
   padding: 1.625rem 5rem;
   flex: 1;
 }
 
 .column:first-of-type{
-  background-color: rgba(91, 135, 229, 0.51);
   max-width: 35%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column:first-of-type img{
+  width: 15.625rem;
+  height: 15.625rem;
+  margin: 0 auto;
 }
 
 .column:first-of-type p:first-of-type{
   font-size: 3.125rem;
+  color: #ffffff;
+  padding-top: 4cqi;
 }
+
+.column:first-of-type p:last-of-type{
+  color: #ffffff;
+}
+
+.column:last-of-type{
+  width: 100%;
+  background-color: #ffffff;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column:last-of-type form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 35.9375rem;
+  width: 100%;
+}
+
+.column:last-of-type form h1{
+  margin-bottom: 4rem;
+  font-size: 1.875rem;
+}
+
+.column:last-of-type form button{
+  margin-top: 2rem;
+}
+
+.column:last-of-type form p{
+  text-align:  center;
+}
+
